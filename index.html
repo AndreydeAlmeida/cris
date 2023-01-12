@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.R.I.S</title>
+
+    <Style>
+
+        body{
+            background-image: url("IMAGEM/thumbnail.png");
+            color: aliceblue;
+        }
+
+    </Style>
+    
+<body>
+    <form>
+        <h1>Login</h1>
+        <input type="text" placeholder="Login" id="login">
+        <BR></BR>
+        <input type="password" placeholder="Senha" id="senha">
+        <BR></BR>
+        <input type="submit" onclick="logar(); return false">
+    </form>
+
+
+    <script>
+
+        function logar(){
+
+            var login= document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "Lilith Santos" && senha == "DJKDSF&Ü"){
+                alert('Bem Vinda Agente!');
+                location.href = "https://drive.google.com/drive/folders/16C9_l1RdPwhKLLKmXyFqYe1pTtzTGV7G?usp=sharing";
+            }else{
+            alert('Agente Não Identificado, Verifique as suas credenciais');
+            }
+
+        }
+
+    </script>
+</body>
+</html>
